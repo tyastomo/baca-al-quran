@@ -56,7 +56,7 @@ export default async function SuratPage({ params }: { params: { id: string } }) 
   });
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 sm:p-6 max-w-6xl mx-auto">
       <BackToTopButton />
       <BackButton />
       <div className="flex justify-between items-center mt-10">
@@ -80,7 +80,7 @@ export default async function SuratPage({ params }: { params: { id: string } }) 
       {/* Header Surat */}
       <div className="text-center space-y-2">
         <h2 className="text-4xl font-bold font-arabic dark:text-green-400">{surat.nama}</h2>
-        <h3 className="text-2xl font-semibold dark:text-green-400">{surat.namaLatin} - {surat.arti}</h3>
+        <h3 className="text-2xl font-semibold dark:text-green-400">{surat.namaLatin} ({surat.arti})</h3>
       </div>
 
       {/* Deskripsi Surat */}

@@ -34,7 +34,7 @@ export default function Home() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 sm:p-6 max-w-6xl mx-auto">
       <input
         type="text"
         placeholder="Cari surat..."
